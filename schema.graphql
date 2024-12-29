@@ -1,9 +1,22 @@
 type Query {
-    users: [User]
+    getUsers: [User]
+    getUserById(id: ID): User
 }
 
+
 type User {
-    id: ID!
+    id: ID
     name: String
     email: String
+    posts: [Post]
+}
+
+type Subscription {
+    newMessage: String
+}
+
+type Post {
+    postId: ID
+    title: String
+    userId: ID
 }

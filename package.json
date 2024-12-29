@@ -21,7 +21,18 @@
   },
   "homepage": "https://github.com/sirsathmanoj5/graphql-apollo-server-node-typescript#readme",
   "dependencies": {
+    "@apollo/server": "^4.11.2",
+    "@types/dotenv": "^8.2.3",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/ws": "^8.5.13",
     "apollo-server": "^3.13.0",
-    "graphql": "^16.10.0"
+    "dataloader": "^2.2.3",
+    "graphql": "^16.10.0",
+    "graphql-subscriptions": "^3.0.0",
+    "graphql-tools": "^9.0.9",
+    "graphql-ws": "^5.16.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.2",
+    "ws": "^8.18.0"
   }
 }

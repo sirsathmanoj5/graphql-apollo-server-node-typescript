@@ -1,8 +1,18 @@
-import { getUsers } from './user';
+import { getUserById, getUsers } from './users';
+import { getPostById, getPosts } from './posts';
+
+import subscribe from './subscription';
 
 const resolvers = {
     Query: {
-        users: getUsers
+        getUsers,
+        getUserById
+    },
+    Subscription: {
+        newMessage: subscribe
+    },
+    User: {
+        posts: getPostById
     }
 }
 
